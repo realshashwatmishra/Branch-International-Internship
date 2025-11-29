@@ -24,7 +24,72 @@ A full-stack real-time customer service messaging portal that enables teams of a
 - Configurable customer tier and account balance
 - Urgency keyword suggestions for testing priority detection
 
-## 🏗️ Tech Stack
+## 📸 Application Walkthrough
+
+### 1. Landing Page
+When you first access the application, you'll see the landing page with options to access either the Customer Portal or Agent Portal.
+
+![Landing Page](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/agent_login_screen_1764401137722.png)
+
+### 2. Agent Dashboard
+After selecting the Agent Portal and choosing your agent, you'll see the main dashboard with:
+- **Left Sidebar**: List of all customer messages with priority badges
+- **Right Panel**: Message details and customer information
+- **Top Bar**: Search, filters, and customer simulator access
+
+![Agent Dashboard](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/agent_dashboard_final_1764401250594.png)
+
+### 3. Priority Indicators
+Messages are automatically prioritized based on content:
+- **🔴 HIGH** (Red): Urgent matters like loan approvals, account issues
+- **🟠 MEDIUM** (Orange): Important but not urgent requests
+- **⚪ LOW** (Gray): General inquiries
+
+![Priority Badges](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/priority_indicators_view_1764401637123.png)
+
+### 4. Message Detail View
+Clicking on a message shows:
+- Full message content and history
+- Customer information (tier, account balance)
+- Response input area
+- Message assignment and status controls
+
+![Message Detail](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/message_detail_view_1764401291883.png)
+
+### 5. Canned Responses
+Speed up responses with pre-configured templates:
+- Templates organized by category
+- One-click insertion
+- Customizable before sending
+
+![Canned Responses](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/canned_responses_modal_retry_1764401381972.png)
+
+### 6. Customer Simulator
+Test the system by sending messages as a customer:
+- Configure customer details (name, email, tier)
+- Add message content with urgency keywords
+- Watch messages appear in real-time on the dashboard
+
+![Customer Simulator](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/customer_simulator_view_1764401566452.png)
+
+### Workflow Overview
+
+```mermaid
+graph TD
+    A[Customer sends message] --> B[System analyzes urgency]
+    B --> C[Message appears in agent dashboard]
+    C --> D[Agent claims message]
+    D --> E[Agent reviews customer info]
+    E --> F{Response type?}
+    F -->|Template| G[Select canned response]
+    F -->|Custom| H[Type custom response]
+    G --> I[Send response]
+    H --> I
+    I --> J[Update message status]
+    J --> K[Customer receives response]
+```
+
+
 
 **Backend:**
 - Node.js + Express
@@ -88,31 +153,48 @@ The frontend will run on `http://localhost:5173`
 
 ## 💡 Usage Guide
 
+> **Note**: See the [Application Walkthrough](#-application-walkthrough) section above for screenshots of each step!
+
+### Getting Started
+
+1. **Access the Application**: Open your browser to `http://localhost:5173`
+2. **Choose Agent Portal**: Click on "I am an Agent"
+3. **Select Agent**: Choose from Sarah Johnson, Mike Chen, Emily Rodriguez, or David Kim
+4. **Click**: "Access Dashboard"
+
 ### Agent Workflow
 
-1. **View Messages**: Browse all customer messages in the left sidebar
-2. **Filter Messages**: Use filter buttons to show urgent, new, or your assigned messages
-3. **Search**: Type in the search bar to find specific messages or customers
-4. **Select Message**: Click on a message to view full details and customer information
-5. **Claim Message**: Click "Claim Message" to assign it to yourself
-6. **Respond**: 
-   - Type a response manually, OR
-   - Click "Use Template" to select a canned response
-   - Click "Send Response" to submit
-7. **Update Status**: Change message status using the dropdown (New → In Progress → Resolved)
+1. **Browse Messages**: View all customer messages in the left sidebar with priority badges (HIGH/MEDIUM/LOW)
+2. **Filter & Search**: 
+   - Use filter buttons (Urgent, New, Assigned to Me, Unassigned)
+   - Type in search bar to find specific messages or customers
+3. **Select Message**: Click on any message to view full details and customer context
+4. **Claim Message**: Click "Claim Message" to assign it to yourself
+5. **Respond to Customer**:
+   - **Option A**: Type a custom response manually
+   - **Option B**: Click "Use Template" → Select category → Choose template
+6. **Send & Update**: 
+   - Click "Send Response"
+   - Update status via dropdown (New → In Progress → Resolved)
 
-### Testing Real-Time Features
+### Testing Features
 
-1. **Multi-Agent Testing**: 
-   - Open the app in multiple browser windows/tabs
-   - Log in as different agents
-   - Claim a message in one window and watch it update in others
+**Real-Time Multi-Agent Testing:**
+- Open app in multiple browser windows
+- Log in as different agents
+- Claim/update a message in one window
+- Watch it update live in all other windows
 
-2. **Send Test Messages**:
-   - Click "Show Customer Simulator" in the dashboard header
-   - Fill in customer details and message
-   - Try keywords like "urgent", "loan approval", or "disbursed" for high priority
-   - Click "Send Message" and watch it appear in real-time
+**Send Test Messages:**
+- Click "Show Customer Simulator" in dashboard header
+- Fill in customer details and message content
+- Try urgency keywords: "urgent", "loan approval", "disbursed", "emergency"
+- Click "Send Message" and watch it appear instantly
+
+**Search Testing:**
+- Type customer name, email, or keywords
+- Results filter in real-time
+- Clear search to reset view
 
 ## 🎯 Priority Detection
 
