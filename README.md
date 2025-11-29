@@ -29,7 +29,7 @@ A full-stack real-time customer service messaging portal that enables teams of a
 ### 1. Landing Page
 When you first access the application, you'll see the landing page with options to access either the Customer Portal or Agent Portal.
 
-![Landing Page](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/agent_login_screen_1764401137722.png)
+![Landing Page](./screenshots/landing_page.png)
 
 ### 2. Agent Dashboard
 After selecting the Agent Portal and choosing your agent, you'll see the main dashboard with:
@@ -37,7 +37,7 @@ After selecting the Agent Portal and choosing your agent, you'll see the main da
 - **Right Panel**: Message details and customer information
 - **Top Bar**: Search, filters, and customer simulator access
 
-![Agent Dashboard](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/agent_dashboard_final_1764401250594.png)
+![Agent Dashboard](./screenshots/agent_dashboard.png)
 
 ### 3. Priority Indicators
 Messages are automatically prioritized based on content:
@@ -45,7 +45,7 @@ Messages are automatically prioritized based on content:
 - **🟠 MEDIUM** (Orange): Important but not urgent requests
 - **⚪ LOW** (Gray): General inquiries
 
-![Priority Badges](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/priority_indicators_view_1764401637123.png)
+![Priority Badges](./screenshots/priority_badges.png)
 
 ### 4. Message Detail View
 Clicking on a message shows:
@@ -54,7 +54,7 @@ Clicking on a message shows:
 - Response input area
 - Message assignment and status controls
 
-![Message Detail](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/message_detail_view_1764401291883.png)
+![Message Detail](./screenshots/message_detail.png)
 
 ### 5. Canned Responses
 Speed up responses with pre-configured templates:
@@ -62,7 +62,7 @@ Speed up responses with pre-configured templates:
 - One-click insertion
 - Customizable before sending
 
-![Canned Responses](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/canned_responses_modal_retry_1764401381972.png)
+![Canned Responses](./screenshots/canned_responses.png)
 
 ### 6. Customer Simulator
 Test the system by sending messages as a customer:
@@ -70,7 +70,7 @@ Test the system by sending messages as a customer:
 - Add message content with urgency keywords
 - Watch messages appear in real-time on the dashboard
 
-![Customer Simulator](file:///C:/Users/shash/.gemini/antigravity/brain/430b7c7c-2774-42df-9abd-c5e27b9b48a8/customer_simulator_view_1764401566452.png)
+![Customer Simulator](./screenshots/customer_simulator.png)
 
 ### Workflow Overview
 
@@ -273,6 +273,13 @@ MAIL/
 │   ├── index.html
 │   ├── vite.config.js
 │   └── package.json
+├── screenshots/           # Application screenshots for README
+│   ├── landing_page.png
+│   ├── agent_dashboard.png
+│   ├── priority_badges.png
+│   ├── message_detail.png
+│   ├── canned_responses.png
+│   └── customer_simulator.png
 └── README.md
 ```
 
