@@ -1,0 +1,105 @@
+.message-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--spacing-sm);
+}
+
+.message-list-loading,
+.message-list-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    gap: var(--spacing-md);
+    color: var(--text-tertiary);
+}
+
+.message-item {
+    padding: var(--spacing-md);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.message-item:hover {
+    border-color: var(--border-color-hover);
+    background: rgba(26, 32, 48, 0.9);
+    transform: translateX(4px);
+}
+
+.message-item.selected {
+    border-color: var(--accent-primary);
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.message-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+}
+
+.message-customer {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.customer-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+}
+
+.urgency-indicator {
+    display: flex;
+    align-items: center;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.urgency-indicator.high {
+    color: var(--urgency-high);
+}
+
+.urgency-indicator.medium {
+    color: var(--urgency-medium);
+}
+
+.message-time {
+    white-space: nowrap;
+}
+
+.message-preview {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    margin-bottom: var(--spacing-sm);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.message-item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+}
+
+.message-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.assigned-to {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}

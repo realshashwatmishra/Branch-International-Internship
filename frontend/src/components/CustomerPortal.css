@@ -1,0 +1,167 @@
+.customer-portal-container {
+    min-height: 100vh;
+    padding: var(--spacing-xl);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.portal-bg-decoration {
+    position: absolute;
+    top: -20%;
+    right: -5%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: pulse 6s ease-in-out infinite;
+}
+
+.customer-portal-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.back-button {
+    margin-bottom: var(--spacing-lg);
+}
+
+.portal-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.portal-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-lg);
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.portal-header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.tagline {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.portal-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.ticket-form-card {
+    padding: var(--spacing-xl);
+}
+
+.ticket-form-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.success-message {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--accent-success);
+    margin: var(--spacing-lg) 0;
+    animation: fadeIn var(--transition-slow) ease;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.info-card {
+    padding: var(--spacing-lg);
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: start;
+}
+
+.info-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-success);
+}
+
+.info-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.info-card p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+    .portal-main {
+        grid-template-columns: 1fr;
+    }
+
+    .info-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        flex: 1;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portal-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
+}

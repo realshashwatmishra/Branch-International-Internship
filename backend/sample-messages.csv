@@ -1,0 +1,31 @@
+customer_name,customer_email,message_text,tier,account_balance
+John Martinez,john.martinez@email.com,"Hi, I applied for a loan 3 days ago and haven't heard back. When will my loan be approved? I need the funds urgently for a medical emergency.",premium,5420.50
+Sarah Thompson,sarah.t@email.com,"Can you help me update my phone number on my account? I changed my number last week.",standard,1250.00
+Michael Chen,michael.chen@email.com,"My loan was approved yesterday! When will the funds be disbursed to my account? I'm waiting to make an important payment.",gold,12500.75
+Jessica Williams,jessica.w@email.com,"I'm having trouble logging into my account. It says my password is incorrect but I'm sure it's right. Can you help?",standard,850.00
+Robert Johnson,robert.j@email.com,"What documents do I need to upload for loan verification? The app doesn't make it very clear.",standard,0.00
+Emily Davis,emily.davis@email.com,"URGENT: My loan application status still shows pending after 5 days. I need this loan to be processed ASAP as I have an urgent business expense.",premium,8900.00
+David Kim,david.kim@email.com,"How do I check my loan application status? Where can I see updates?",standard,2100.00
+Lisa Anderson,lisa.a@email.com,"My account seems to be frozen. I can't access any features. Please help immediately!",gold,15600.00
+James Brown,james.brown@email.com,"What are the interest rates for personal loans? I'm considering applying.",standard,450.00
+Maria Garcia,maria.garcia@email.com,"I uploaded my salary slip 2 days ago but it's still showing as pending verification. When will this be verified?",standard,3200.00
+Christopher Lee,chris.lee@email.com,"The disbursement has been delayed by 4 days now. My loan was approved on Monday but I still haven't received the funds. This is critical!",premium,6700.00
+Amanda White,amanda.w@email.com,"Can I update my bank account details? I opened a new account and want the loan to be disbursed there instead.",standard,1800.00
+Daniel Martinez,daniel.m@email.com,"What's the maximum loan amount I can apply for based on my profile?",gold,22000.00
+Jennifer Taylor,jennifer.taylor@email.com,"My loan application was rejected. Can you tell me why and what I can do to improve my chances?",standard,500.00
+Matthew Anderson,matt.anderson@email.com,"I need to speak to someone about my loan approval urgently. I've been waiting for over a week.",premium,4500.00
+Ashley Robinson,ashley.r@email.com,"How long does the verification process typically take?",standard,0.00
+Kevin White,kevin.white@email.com,"Can you provide me with my account statement for the last 3 months?",gold,18900.00
+Michelle Harris,michelle.h@email.com,"When will I get my loan? It's been approved for 3 days and still no disbursement. I need this money today!",premium,7200.00
+Ryan Clark,ryan.clark@email.com,"Is there a mobile app for iOS? I can only find the Android version.",standard,950.00
+Laura Lewis,laura.lewis@email.com,"I want to close my account. What's the process?",standard,120.00
+Brandon Walker,brandon.w@email.com,"My application status changed to 'under review' - what does this mean? How long will the review take?",standard,2800.00
+Stephanie Hall,stephanie.h@email.com,"URGENT: Loan disbursement needed immediately. Approved 5 days ago but funds not received. Critical situation!",gold,11200.00
+Justin Young,justin.young@email.com,"Can I apply for a second loan while my first one is still active?",premium,8500.00
+Nicole Allen,nicole.allen@email.com,"How do I change my email address associated with my account?",standard,1600.00
+Eric King,eric.king@email.com,"What are your customer service hours? I need to call but don't know when you're available.",standard,0.00
+Megan Wright,megan.wright@email.com,"My loan was approved! How soon will the money be disbursed to my account?",standard,3400.00
+Andrew Scott,andrew.scott@email.com,"I'm unable to upload documents. The app keeps crashing when I try. Please fix this issue.",standard,2200.00
+Brittany Green,brittany.g@email.com,"Can you explain the repayment schedule for a 12-month loan?",gold,19500.00
+Joseph Adams,joseph.adams@email.com,"Account blocked! Can't login! This is an emergency - I need access right now!",premium,9800.00
+Rachel Baker,rachel.baker@email.com,"How can I improve my credit score with your platform?",standard,680.00
